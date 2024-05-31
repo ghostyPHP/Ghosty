@@ -1,15 +1,22 @@
 <?php
-
-require __DIR__ . '/../vendor/autoload.php';
-
-
-
-
-
-$app = require_once __DIR__ . '/../bootstrap/app.php';
+define('APP_PATH', $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__));
 
 
 
 
 
-$app->make(Ghosty\Contracts\Foundation\Http\KernelContract::class);
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
+
+
+
+$container = require_once __DIR__ . '/../bootstrap/app.php';
+
+
+
+
+
+echo $container
+    ->make(Ghosty\Foundation\Application::class)
+    ->handle();

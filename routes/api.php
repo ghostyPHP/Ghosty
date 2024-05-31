@@ -1,28 +1,6 @@
 <?php
 
-namespace Routes;
+use App\Controllers\TestController;
+use Ghosty\Support\Facades\Route;
 
-use Ghosty\Contracts\Routing\RouteContract;
-
-class API
-{
-    public function __construct(private RouteContract $Route)
-    {
-        //
-
-
-
-
-        $Route->get('home');
-
-
-
-
-
-
-
-
-
-        //
-    }
-}
+Route::get('profile/{id}')->controller(TestController::class)->action('show');

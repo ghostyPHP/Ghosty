@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57d17c1cb4efe1f375ddd8603604ef96",
+    "content-hash": "21e3ee376768c2d1f273bc3efa217974",
     "packages": [
+        {
+            "name": "ghosty/container",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ghostyPHP/Container.git",
+                "reference": "ff52ac04f20fe83681b56e718de49dba2444bcd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ghostyPHP/Container/zipball/ff52ac04f20fe83681b56e718de49dba2444bcd2",
+                "reference": "ff52ac04f20fe83681b56e718de49dba2444bcd2",
+                "shasum": ""
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Ghosty\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AnvilM",
+                    "email": "211anvil112@gmail.com"
+                }
+            ],
+            "description": "Simple small dependency injection container",
+            "keywords": [
+                "container",
+                "dependency injection",
+                "di"
+            ],
+            "support": {
+                "issues": "https://github.com/ghostyPHP/Container/issues",
+                "source": "https://github.com/ghostyPHP/Container/tree/v1.0.0"
+            },
+            "time": "2024-05-29T02:07:53+00:00"
+        },
         {
             "name": "ghosty/framework",
             "version": "v1.0.0",

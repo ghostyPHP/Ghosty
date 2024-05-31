@@ -16,6 +16,7 @@
         }
     ],
     "require": {
-        "ghosty/framework": "^1.0"
+        "ghosty/framework": "^1.0",
+        "ghosty/container": "^1.0"
     }
 }

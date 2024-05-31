@@ -1,15 +1,21 @@
 <?php
 
-$app = new Ghosty\Foundation\Application;
+use Ghosty\Container\Container;
 
 
 
 
 
-$app->singleton(Ghosty\Contracts\Foundation\Http\KernelContract::class, Ghosty\Foundation\Http\Kernel::class);
+$container = Container::getInstance();
 
 
 
 
 
-return $app;
+$container->singleton(Ghosty\Contracts\Foundation\Http\KernelContract::class, App\Kernel::class);
+
+
+
+
+
+return $container;
