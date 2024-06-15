@@ -18,5 +18,5 @@ $container = require_once __DIR__ . '/../bootstrap/app.php';
 
 
 echo $container
-    ->make(Ghosty\Foundation\Application::class)
+    ->make(Ghosty\Framework\Foundation\Application::class)
     ->handle();

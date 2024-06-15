@@ -12,7 +12,7 @@ $container = Container::getInstance();
 
 
 
-$container->singleton(Ghosty\Contracts\Foundation\Http\KernelContract::class, App\Kernel::class);
+$container->singleton(Ghosty\Framework\Contracts\Foundation\Http\KernelContract::class, App\Kernel::class);
 
 
 

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Ghosty\Support\Facades\DB;
+use Ghosty\Framework\Support\Facades\DB;
 use PDO;
 
 class User

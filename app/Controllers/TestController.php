@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Ghosty\Support\Facades\Request;
+use Ghosty\Framework\Support\Facades\Request;
 
 class TestController
 {

@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Ghosty\Foundation\Http\Kernel as HttpKernel;
+use Ghosty\Framework\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
@@ -11,7 +11,7 @@ class Kernel extends HttpKernel
         /**
          * Ghosty Service Providers
          */
-        \Ghosty\Database\DatabaseServiceProvider::class,
+        \Ghosty\Framework\Database\DatabaseServiceProvider::class,
 
 
 
