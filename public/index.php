@@ -1,5 +1,9 @@
 <?php
-define('APP_PATH', $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__));
+
+use Ghosty\Container\Facades\Container;
+
+
+define('APP_PATH', dirname(__DIR__));
 
 
 
@@ -11,12 +15,12 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 
 
-$container = require_once __DIR__ . '/../bootstrap/app.php';
+Container::singleton(Ghosty\Framework\Contracts\KernelContract::class, Ghosty\Framework\Kernel::class);
 
 
 
 
 
-echo $container
-    ->make(Ghosty\Framework\Foundation\Application::class)
-    ->handle();
+Container::make(Ghosty\Framework\Application::class)
+    ->createResponse()
+    ->sendResponse();
