@@ -2,9 +2,6 @@
 
 namespace App\Models;
 
-use Ghosty\Framework\Support\Facades\DB;
-use PDO;
-
 class User
 {
     /**
@@ -14,6 +11,6 @@ class User
      */
     public static function All()
     {
-        return DB::getPDO()->query('SELECT * FROM `users`')->fetchAll(PDO::FETCH_ASSOC);
+        //return DB::getPDO()->query('SELECT * FROM `users`')->fetchAll(PDO::FETCH_ASSOC);
     }
 }

@@ -2,12 +2,18 @@
 
 namespace App\Controllers;
 
-use Ghosty\Framework\Support\Facades\Request;
+use Ghosty\Component\HttpFoundation\Contracts\RequestContract;
+use Ghosty\Component\HttpFoundation\Contracts\ResponseContract;
+use Ghosty\Component\HttpFoundation\Response;
 
 class TestController
 {
-    public function show()
+    public function __construct(private RequestContract $request)
     {
-        return Request::route('id', '0');
+    }
+
+    public function show(): ResponseContract
+    {
+        return new Response($this->request->getAttributes()->get(':id'));
     }
 }
